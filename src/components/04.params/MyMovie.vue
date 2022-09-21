@@ -1,12 +1,12 @@
 <template>
-  <h1>MyMovie</h1>
+  <h1>MyMovie ---{{id}}</h1>
   <hr>
-
 </template>
 
 <script>
   export default {
-    name: 'MyMovie'
+    name: 'MyMovie',
+    props: ['id']
   }
 </script>
 
