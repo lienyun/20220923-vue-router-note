@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import App from './components/05.named/App.vue'
+import App from './components/06.guard/App.vue'
 import './index.css'
-import router from './components/05.named/router'
+import router from './components/06.guard/router'
 
 const app = createApp(App)
 //掛載路由模組

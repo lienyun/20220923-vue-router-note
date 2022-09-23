@@ -26,4 +26,11 @@ const router = createRouter({
   ]
 })
 
+//聲明全局的路由守衛
+router.beforeEach((to, from) => {
+  console.log(from)
+
+  console.log('ok')
+})
+
 export default router
