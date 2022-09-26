@@ -16,7 +16,10 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  if(to.path === '/main') {
+
+ const tokenStr = localStorage.getItem('token')
+ console.log(tokenStr)
+  if(to.path === '/main' && !tokenStr) {
     //使用者要連接後台首頁
     next('/login')
   }else{
